@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,button{
+            margin: 10px;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        div{
+            display: flex;
+        }
+
+        .vermelha{
+            background-color: red;
+
+        }
+        .verde{
+            background-color: green;
+
+        }
+        .azul{
+            background-color: blue;
+
+        }
+        button{
+            color: white;
+            max-width: 200px;
+            border: 1px solid white;
+        }
+        .quadro{
+            width: 600px;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="quadro" onmouseover = "mudaCor('#ffffff')">
+        </div>
+        <button class="vermelha" onclick="mudaCor('red')">vermelha</button>
+        <button class="verde" onclick="mudaCor('green')">verde</button>
+        <button class="azul" onclick="mudaCor('blue')">azul</button>
+    </div>
+
+
+
+
+
+    <script src="retanguloScript.js" ></script>
+</body>
+</html>
