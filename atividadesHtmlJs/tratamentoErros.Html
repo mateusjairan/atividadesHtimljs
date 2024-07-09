@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+       try {
+        let numero = Number(prompt("digite apenas 1 ou 2"))
+        if(numero == 1 || numero == 2){
+            alert("acertou kkkkkkkkkkkkk")
+        }
+        else{
+            throw new Error("Você não digitou 1 ou 2. Errou Rude")
+        }
+       } catch (error) {
+        console.log(error.message)
+       }
+       finally{
+        
+       }
+       alert("executei mesmo assim")
+    </script>
+</body>
+</html>
