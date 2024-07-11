@@ -4,18 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style></style>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .btns{
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Cotação de Moedas</h1>
     <form action="#">
-        <label for="valor">Valor a converter</label>
-        <input type="text" id="valor" name="valor">
-        <input type="button" value="Dólar" id="usd">
-        <input type="button" value="Euro" id="eur">
-        <input type="button" value="Bitcoin" id="btc">
+        <label for="valor">Valor a Converter</label>
+        <input type="number" id="valor" name="valor">
+        <div class="btns">        
+            <input type="button" value="Dólar" id="usd">
+            <input type="button" value="Euro" id="eur">
+            <input type="button" value="BitCoin" id="btc">
+        </div>
+        
     </form>
+    <div id="conversaoMoeda">
 
-<script src="cotacaoMoedas.js"></script>
+    </div>
+
+    <script src="cotacaoMoedas.js"></script>
+    
 </body>
 </html>
